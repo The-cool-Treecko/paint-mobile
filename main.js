@@ -40,5 +40,6 @@ function my_touchmove(e) {
     console.log("x  = " + current_position_of_touch_x + "y = " + current_position_of_touch_y);
     ctx.lineTo(current_position_of_touch_x, current_position_of_touch_y);
     ctx.stroke();
-
+    last_position_of_x = current_position_of_touch_x;
+    last_position_of_y = current_position_of_touch_y;
 }
